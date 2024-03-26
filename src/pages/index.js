@@ -18,8 +18,8 @@ export default function Home() {
   }
   return (
     <>
-      <button onClick={() => signIn('github')}>GitHub Sign in</button>
-      <button onClick={() => signIn('google',{callback:"https://page-routing.vercel.app"})}>google Sign in</button>
+      <button onClick={() => signIn('github',{callbackUrl:"https://page-routing.vercel.app"})}>GitHub Sign in</button>
+      <button onClick={() => signIn('google',{callbackUrl:"https://page-routing.vercel.app"})}>google Sign in</button>
 
     </>
   );
