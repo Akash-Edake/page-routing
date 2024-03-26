@@ -6,11 +6,12 @@ import { useSession, signIn, signOut } from "next-auth/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const { data: session } = useSession()
+  const { data: session,accessToken } = useSession()
   if (session) {
     return (
       <>
         Signed in as {session.user.email} <br />
+        Access Token: {session.accessToken} <br />
         <button onClick={() => signOut()}>Sign out</button>
       </>
     )
