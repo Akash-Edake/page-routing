@@ -9,8 +9,8 @@ export const authOptions = {
       clientSecret:process.env.GITHUB_CLIENT_SECRETE,
     }),
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET
+      clientId:'940419656045-eb35g8dabusnd9moagoa9uovvdd80jpn.apps.googleusercontent.com',
+      clientSecret:'be4654f980dc9f0812ff7444e2417ffef7534006'
     })
     // ...add more providers here
   ],
